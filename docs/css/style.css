@@ -1,0 +1,270 @@
+@font-face {
+  font-family: font;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+
+body {
+  /* direction: rtl; */
+  font-family: font, "cairoFont", Arial, sans-serif;
+  background-color: #fafafa;
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 60px 0;
+  height: 730px;
+  z-index: 2;
+}
+
+header .logo img {
+  padding: 1px 1px;
+  margin: 1px auto 5px;
+  /* border-bottom: 2px solid #f7d9d9;  */
+  /* جعل عرض الخط بعرض الشعار */
+  /* display: inline-block;  */
+}
+
+header .slogn h1 {
+  font-size: 20px;
+  /* font-weight: bold; */
+  color: #f6f6f6;
+  line-height: 7px;
+}
+
+header .page-heading h1 {
+  font-size: 55px;
+  font-weight: bold;
+  color: #f4f9f9;
+  padding: 20px 10px;
+  /* margin: 150px auto 150px; */
+  margin: 15px 0 5px 0;
+}
+
+header .page-heading p {
+  font-size: 20px;
+  color: #f4f9f9;
+  line-height: 15px;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.countdown-section .countdown-amount {
+  display: block;
+  font-size: 80px;
+  font-weight: bold;
+  color: #f4d160;
+}
+
+.countdown-section .countdown-period {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.countdown-section {
+  display: inline-block;
+  margin: 0 23px;
+}
+
+header .counter {
+  margin: 6px auto;
+  padding-bottom: 35px;
+}
+
+header .send-notification {
+  font-size: 20px;
+  color: #f4f9f9;
+}
+
+header .send-notification .input-group input {
+  border-radius: 0;
+  font-size: 15px;
+  font-family: ar-font;
+  color: #e6e6e6;
+  border-width: 2px;
+  border-color: #e6e6e6;
+}
+
+/* i {
+    color: #f4d160;
+  } */
+header .send-notification .input-group i {
+  color: #f4d160;
+}
+
+header .send-notification .input-group .form-control {
+  margin-left: 40px;
+}
+
+/*إخفاء الظل الذي يظهر حول مربع البحث والأزرار عند الضغط عليه*/
+header .send-notification .input-group .form-control:focus,
+button:focus {
+  box-shadow: none !important;
+}
+
+header .send-notification .input-group button {
+  border-radius: 0;
+}
+
+header .send-notification .input-group {
+  margin: 10px auto;
+  width: 35%;
+  padding-left: 15px;
+  padding-bottom: 17px;
+}
+
+/* @media (max-width: 3576px){
+    .input-group {
+        width: 60% !important;
+    }
+} */
+
+header .send-notification .input-group .alert {
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  left: 0;
+}
+
+.card .card-icons {
+  position: relative;
+}
+
+/*flex يجب علينا وضع هذه الخاصية للابن "جسم البطاقة" لأن البطاقة لديها قيمة عرض*/
+.card-body {
+  min-width: 0;
+}
+
+.card:hover {
+  transform: translateY(-.9%);
+}
+
+.card {
+  transition: transform .5s;
+}
+
+/* لحل مشكلة أحجام البطاقات الغير متساوية */
+.card .card-title {
+  height: 70px;
+  /* إخفاء الكلمات التي تتخطى الإرتفاع */
+  overflow: hidden;
+}
+
+footer {
+  background-image: url(../img/footer.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+}
+
+footer .overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 60px 0;
+  height: 300px;
+  z-index: 2;
+}
+
+footer .overlay p {
+  font-size: 25px;
+  color: #f5f4f4;
+  width: 80%;
+  margin: 0 auto 30px;
+  z-index: 3;
+}
+
+footer .overlay ul li a {
+  width: 60px;
+  height: 60px;
+  line-height: 70px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border-radius: 15%;
+}
+
+footer .overlay ul li {
+  margin: 0 5px 10px;
+}
+
+footer .overlay ul li a.facebook:hover {
+  background-color: #3b5999;
+}
+
+footer .overlay ul li a.twitter:hover {
+  background-color: #55acee;
+}
+
+footer .overlay ul li a.linkedin:hover {
+  background-color: #0077B5;
+}
+
+footer .overlay ul li a.instagram:hover {
+  background-color: rgb(203, 62, 124);
+}
+
+/*تنسيق مسؤول عن درجة نعومة التأثير*/
+footer .contact .overlay ul li a {
+  -webkit-transition: all 0.2s ease;
+  Transition: all 0.2s ease;
+}
+
+footer .overlay p a {
+  font-size: 20px;
+  color: #b4b4b4;
+  text-decoration-line: none;
+}
+
+footer .overlay p a i {
+  color: #ffce00;
+  margin-left: 5px;
+}
+
+/*- تنسيق إلغاء التأثيرات الحركية فى شاشات الجوال -*/
+/*- animate.css فى حالة استخدام الاصدار رقم 4 من مكتبة -*/
+@media (max-width: 768px) {
+  .animate__bounceIn {
+    animation-name: none !important;
+  }
+
+  .animate__fadeInUp {
+    animation-name: none !important;
+  }
+
+  .animate__fadeInDown {
+    animation-name: none !important;
+  }
+
+  .animate__zoomIn {
+    animation-name: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .input-group {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .input-group {
+    width: 60% !important;
+  }
+
+  .countdown-section .countdown-amount {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    color: #f4d160;
+  }
+}
